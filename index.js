@@ -23,8 +23,8 @@ function execSQLQuery(sqlQry, res){
     const connection = mysql.createConnection({
      //host     : 'localhost',       port     : 3306,       user     : 'root',       
     //password : 'Senaisp@2021',       database : 'senai115'     });
-    host     : 'mysql743.umbler.com',       port     : 41890,       user     : 'herbert',       
-    password : 'Senai115',       database : 'senaidb'     });
+    host     : 'mysql742.umbler.com',       port     : 41890,       user     : 'herbert1',       
+    password : 'Senai115',       database : 'senaidb1'     });
    
     connection.query(sqlQry, function(error, results, fields){
         if(error) 

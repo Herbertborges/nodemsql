@@ -87,7 +87,8 @@
   }
 
   function deleta(id) {
-    fetch('http://127.0.0.1:3000/clientes/' + id, {
+    //fetch('http://127.0.0.1:3000/clientes/' + id, {
+      fetch('https://herbertborges.netlify.app:3000/' + id, {
       method: 'DELETE'
     });
     alert("Excluido com sucesso!")
@@ -98,7 +99,8 @@
     //const form = new FormData(document.getElementById("form"));
     const nome = document.getElementById("nome").value;
     const cpf = document.getElementById("cpf").value;
-    fetch('http://127.0.0.1:3000/clientes/', {
+    //fetch('http://127.0.0.1:3000/clientes/', {
+      fetch('https://herbertborges.netlify.app:3000/', {
       method: 'POST',
       body: `{"nome": "${nome}", "cpf": "${cpf}" }`,
       headers: { "Content-Type": "application/json" }
@@ -111,7 +113,8 @@
     //const form = new FormData(document.getElementById("form"));
     const nome = document.getElementById(`nome-${id}`).value;
     const cpf = document.getElementById(`cpf-${id}`).value;
-    fetch('http://127.0.0.1:3000/clientes/' + id, {
+    //fetch('http://127.0.0.1:3000/clientes/' + id, {
+      fetch('https://herbertborges.netlify.app:3000/' + id, {
       method: 'PATCH',
       body: `{"nome": "${nome}", "cpf": "${cpf}" }`,
       headers: { "Content-Type": "application/json" }

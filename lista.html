@@ -71,7 +71,7 @@
     myList.innerHTML = ""
     id = document.getElementById(`id`).value
   //fetch('http://127.0.0.1:3000/clientes/' + id)
-   fetch('https://herbertborges.netlify.app:3000/clientes/' + id)
+   fetch('http://herbert1-com-br.umbler.net/:3000/clientes/' + id)
 
       .then(function (response) {
         console.log(response)
@@ -88,7 +88,7 @@
 
   function deleta(id) {
     //fetch('http://127.0.0.1:3000/clientes/' + id, {
-      fetch('https://herbertborges.netlify.app:3000/' + id, {
+      fetch('http://herbert1-com-br.umbler.net/:3000/' + id, {
       method: 'DELETE'
     });
     alert("Excluido com sucesso!")
@@ -100,7 +100,7 @@
     const nome = document.getElementById("nome").value;
     const cpf = document.getElementById("cpf").value;
     //fetch('http://127.0.0.1:3000/clientes/', {
-      fetch('https://herbertborges.netlify.app:3000/', {
+      fetch('http://herbert1-com-br.umbler.net/:3000/', {
       method: 'POST',
       body: `{"nome": "${nome}", "cpf": "${cpf}" }`,
       headers: { "Content-Type": "application/json" }
@@ -114,7 +114,7 @@
     const nome = document.getElementById(`nome-${id}`).value;
     const cpf = document.getElementById(`cpf-${id}`).value;
     //fetch('http://127.0.0.1:3000/clientes/' + id, {
-      fetch('https://herbertborges.netlify.app:3000/' + id, {
+      fetch('http://herbert1-com-br.umbler.net/:3000/' + id, {
       method: 'PATCH',
       body: `{"nome": "${nome}", "cpf": "${cpf}" }`,
       headers: { "Content-Type": "application/json" }

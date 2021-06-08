@@ -1,0 +1,28 @@
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="http://localhost:3000/clientes/" method="patch">  
+  <label for="id">id:</label><br>
+  <input type="text" id="id" name="id" value=""><br>
+  <label for="nome">Nome:</label><br>
+  <input type="text" id="nome" name="nome" value=""><br>
+  <label for="cpf">CPF:</label><br>
+  <input type="text" id="cpf" name="cpf" value=""><br><br>
+  <input type="submit" value="Atualizar">
+  <button onclick="atualiza(' + id + ')"> atualiza </button>'></button>
+  
+ </form> 
+
+</body>
+
+<script>
+   function atualiza(id) {
+        fetch('http://127.0.0.1:3000/clientes/' + window.document.getElementsByName(id), window.document.getElementsByName(nome),  window.document.getElementsByName(cpf){
+          method: 'PATCH'
+        })
+         
+    }
+</script>
+</html>

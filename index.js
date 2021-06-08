@@ -21,10 +21,10 @@ console.log('API funcionando!');
 
 function execSQLQuery(sqlQry, res){
     const connection = mysql.createConnection({
-     host     : 'localhost',       port     : 3306,       user     : 'root',       
-    password : 'Senaisp@2021',       database : 'senai115'     });
-    //host     : 'mysql743.umbler.com',       port     : 41890,       user     : 'herbert',       
-    //password : 'Senai115',       database : 'senaidb'     });
+     //host     : 'localhost',       port     : 3306,       user     : 'root',       
+    //password : 'Senaisp@2021',       database : 'senai115'     });
+    host     : 'mysql743.umbler.com',       port     : 41890,       user     : 'herbert',       
+    password : 'Senai115',       database : 'senaidb'     });
    
     connection.query(sqlQry, function(error, results, fields){
         if(error) 
